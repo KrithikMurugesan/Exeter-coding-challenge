@@ -17,10 +17,7 @@ def textToList():
     my_file = open("find_words.txt", "r")
     content = my_file.read()
     content_list = content.split("\n")
-    '''    for i in content_list:
-        if i not in d.keys():
-            content_list.remove(i)
-    my_file.close()'''
+    my_file.close()
     return content_list
 
 
