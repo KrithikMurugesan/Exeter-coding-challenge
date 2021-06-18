@@ -4,7 +4,7 @@ import re
 
 d={}
 def csvToDictionary():
-    reader = csv.reader(open('/content/drive/MyDrive/Exeter/french_dictionary.csv', 'r'))
+    reader = csv.reader(open('french_dictionary.csv', 'r'))
     d = {}
     for row in reader:
        k, v = row
@@ -14,7 +14,7 @@ def csvToDictionary():
     
 
 def textToList():
-    my_file = open("/content/drive/MyDrive/Exeter/find_words.txt", "r")
+    my_file = open("find_words.txt", "r")
     content = my_file.read()
     content_list = content.split("\n")
     '''    for i in content_list:
@@ -25,7 +25,7 @@ def textToList():
 
 
 def inputfile():
-    my_file = open("/content/drive/MyDrive/Exeter/t8.shakespeare.txt", "r")
+    my_file = open("t8.shakespeare.txt", "r")
     content = my_file.read()
     my_file.close()
     return content    
